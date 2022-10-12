@@ -11,25 +11,24 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 ------- ${nameown} -------
 
 📮 *Note:*
-• Owner tidak menerima save contact
-• Owner berhak blockir tanpa alasan
-• Berbicaralah yang sopan & tidak spam
-• Owner Hanya merespon yang berkaitan dengan BOT
+• Owner nya asik cuy:
+• Jangan spam ya
 • No Telp`
+
 
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-${htjava} *💌 Nama* : WH-MODS-Dev
-${htjava} *✉️ Nama RL* : HAMBA ALLAH
+${htjava} *💌 Nama* : Xianzhe
+${htjava} *✉️ Nama RL* : -
 ${htjava} *♂️ Gender* : Boys
 ${htjava} *🕋 Agama* : Islam
-${htjava} *⏰ Tanggal lahir* : Private 🥶
-${htjava} *🎨 Umur* : 18
+${htjava} *⏰ Tanggal lahir* : Private 
+${htjava} *🎨 Umur* : Private
 ${htjava} *🧮 Kelas* : SUDAH TAMAT
-${htjava} *🧩 Hobby* : MODIFIKASI WHATSAPP "MODDER WHATSAPP"
+${htjava} *🧩 Hobby* : Turu
 ${htjava} *💬 Sifat* : ASIK DAH KALAU DAH KENAL
-${htjava} *🗺️ Tinggal* : Indo, Depok, Jawa Barat
+${htjava} *🗺️ Tinggal* : Indo, Jawa Timur
 ${htjava} *❤️ Waifu* : -
 
 ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
@@ -41,7 +40,10 @@ const sections = [
    {
 	title: `${htjava} OWNER –––––––––·•`,
 	rows: [
-	    {title: "📱 • Nomor", rowId: ".owner nomor"},
+	{title: "📱 • Nomor Owner", rowId: ".owner nomor"},
+	{title: "📱 • Nomor Owner V2", rowId: ".whmods1"},
+	{title: "📱 • Pengembang", rowId: ".whmods2"},
+	{title: "📱 • Creator", rowId: ".whmods3"},
 	{title: "🎨 • Biodata", rowId: ".owner bio"},
 	{title: "🌎 • Script", rowId: ".sc"},
 	]
@@ -99,7 +101,7 @@ const listMessage = {
   }
 }
 
-handler.help = ['owner', 'creaor']
+handler.help = ['owner', 'creator']
 handler.tags = ['main', 'info']
 handler.command = /^(owner|creator)/i
 

@@ -1,14 +1,14 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text }) => {
-let res = await fetch('https://raw.githubusercontent.com/Xmell91/loli/master/loli.json')
+let res = await fetch('https://raw.githubusercontent.com/Xianzheid/Bahan-Nsfw/main/genshin-impact.js')
 if (!res.ok) throw await `${res.status} ${res.statusText}`;
 let json = await res.json();
 let url = json[Math.floor(Math.random() * json.length)]
-await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), 'Cuih Lolicon', 'Next', '.loli', m)
+await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), 'Hoki ga banh?:v' , 'Next', '.Gatcha', m)
 }
-handler.command = /^(loli)$/i
+handler.command = /^(gatcha)$/i
 handler.tags = ['anime']
-handler.help = ['loli', 'limitmenu']
+handler.help = ['Gatcha', 'limitmenu']
 handler.limit = true
 export default handler
